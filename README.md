@@ -19,7 +19,8 @@ create your own caching backend by subclassing `CacheStorage` class and implemen
 Why
 =============
 Well. It's proof of concept now but the main idea is that testing of the code
-that relies on 3-rd party APIs (like BrainTree or GoCardless) is pita. APIs are
+that relies on 3-rd party APIs (like [BrainTree](https://github.com/braintree/braintree_python) 
+or [GoCardless](https://github.com/gocardless/gocardless-python)) is pita. APIs are
 slow, you might have some limits on amount of requests/operations, et cetera.
 With requests-mock on the other hand you can record your test execution and then
 replay it with all requests retrieved from cache. At least that's an idea.
